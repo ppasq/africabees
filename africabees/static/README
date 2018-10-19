@@ -6,15 +6,19 @@ This directory is used to store static assets for your project. User media files
 The convention for this directory is:
 
  * css/ — stores CSS files
- * less/ - stores LESS files
+ * scss/ - stores SCSS files
  * js/ — stores Javascript files
  * img/ — stores image files
 
-# Gulp
+# Sass
 
-Gulp can be used to automatically build css from LESS files.  The gulp process will
-watch you LESS files for changes and recompile.  To install gulp do
-the following 2 steps:
+Stylesheets are written using the SCSS (Sassy CSS) syntax and then built in CSS.
+Sass can be used to automatically build CSS from SCSS files. Sass will
+watch your SCSS files for changes and recompile. Documentation on how to install and use
+Sass can be found at https://sass-lang.com/documentation/
 
-1.  cd into the project directory and install dependencies with `npm install`
-2.  install gulp command line globally with `sudo npm install -g gulp`
+To watch your scss files:
+```
+$ cd path/to/static/
+$ sass --watch scss/main.scss:css/main.css
+```
