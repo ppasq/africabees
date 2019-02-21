@@ -141,6 +141,7 @@ services:
     volumes:
       - statics:/mnt/volumes/statics
       - geoserver-data-dir:/geoserver_data/data
+      - ./africabees:/usr/src/africabees/africabees
     environment:
        DJANGO_SETTINGS_MODULE: africabees.settings
        GEONODE_INSTANCE_NAME: geonode
