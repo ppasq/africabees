@@ -3,23 +3,23 @@ services:
   django:
     environment:
       DEBUG: 'True'
-      GEONODE_LB_HOST_IP: localhost
+      GEONODE_LB_HOST_IP: www.africabees.com
       GEONODE_LB_PORT: 80
-      SITEURL: http://localhost/
-      ALLOWED_HOSTS: "['localhost']"
-      GEOSERVER_PUBLIC_LOCATION: http://localhost/gs/
+      SITEURL: http://www.africabees.com/
+      ALLOWED_HOSTS: "['www.africabees.com']"
+      GEOSERVER_PUBLIC_LOCATION: http://www.africabees.com/geoserver/
 
   celery:
     environment:
       DEBUG: 'True'
-      GEONODE_LB_HOST_IP: localhost
+      GEONODE_LB_HOST_IP: www.africabees.com
       GEONODE_LB_PORT: 80
-      SITEURL: http://localhost/
-      ALLOWED_HOSTS: "['localhost']"
-      GEOSERVER_PUBLIC_LOCATION: http://localhost/gs/
+      SITEURL: http://www.africabees.com/
+      ALLOWED_HOSTS: "['www.africabees.com']"
+      GEOSERVER_PUBLIC_LOCATION: http://www.africabees.com/geoserver/
 
   geoserver:
     environment:
-      GEONODE_LB_HOST_IP: localhost
+      GEONODE_LB_HOST_IP: www.africabees.com
       GEONODE_LB_PORT: 80
       NGINX_BASE_URL:
