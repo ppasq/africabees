@@ -1,0 +1,17 @@
+{% extends "geonode_base.html" %}
+
+{% load i18n %}
+{% block title %} {% trans "About Africa Bees" %} — {{ block.super }} {% endblock %}
+
+{% block body_outer %}
+
+<div class="page-header">
+  <h2>{% trans "Welcome to the hive" %}</h2>
+</div>
+<p class="lead">{% trans "About Us." %}</p>
+<p>{% trans "We are a drone mapping start-up with the aim of providing detailed and accurate data for African urban and rural landscapes. Our aim is to bring together a community of both drone mapping pilots and end-users, to share accurate 3D mapping data using our geospatial content management system and platform. We intend to empower local pilots to capture the data responsibly and accurately. Our platform provides great software tools under a consistent and easy-to-use interface for interactive maps. The journey has just begun. Welcome to the hive. Buzz buzz" %}</p>
+<p>{% trans "Africa Bees was set up by Justin Saunders, a drone and geospatial mapping expert with over 30 years internatioanl experience, particularly in Africa. Justin has extensive expertise in mapping, remote sensing, photogrammetry, topographic survey and database integration of spatial information. Having founded emapsite in 2000 he has extensive web mapping expertise and has recently purchased the 'emapsite international' part of the business where he was responsible for drone mapping projects in Malawi, Sierra Leone, Uganda and Kenya. Justin's passion for drone mapping has created Africa Bees, a startup to empower local pilots to facilitate drone mapping services." %}</p>
+<p>{% trans "Africa Bees has been designed to be a flexible platform that software developers can extend, modify or integrate against to meet requirements in their own applications. It offers a full suite of web mapping services that can be used with GIS packages such as QGIS and ArcGIS." %}</p>
+<p>If you have not registered already and are interested to learn more, then join our hive <a href="http://www.africabees.com/account/signup/">sign up here!</a></p>
+
+{% endblock %}
